@@ -6,15 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
 :root {
   --color-dark-cyan: hsl(158, 36%, 37%);
   --color-cream: hsl(30, 38%, 92%);
@@ -24,9 +15,105 @@ body {
   --text-normal: 1.4rem;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: var(--text-normal);
+  color: var(--color-dark-grayish-blue);
+
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-cream);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  width: min(90vw, 60rem);
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+
+.product-content {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-title {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-very-dark-blue);
+}
+
+.product-description {
+  line-height: 1.5;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.price {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-dark-cyan);
+}
+
+.price-old {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--color-dark-cyan);
+  width: 100%;
+  font: inherit;
+  color: var(--color-white);
+  font-weight: 700;
+  padding: var(--text-normal);
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  position: absolute;
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
