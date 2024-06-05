@@ -8,6 +8,7 @@
 
 :root {
   --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-hover: hsl(158, 36%, 27%);
   --color-cream: hsl(30, 38%, 92%);
   --color-very-dark-blue: hsl(212, 21%, 14%);
   --color-dark-grayish-blue: hsl(228, 12%, 48%);
@@ -113,8 +114,14 @@ body {
 }
 
 .btn:hover,
-.btn:active {
-  background-color: hsl(158, 36%, 27%);
+.btn:active,
+.btn:focus {
+  background-color: var(--color-hover);
+}
+
+.btn:focus {
+  outline-offset: 0.6rem;
+  outline-color: var(--color-dark-cyan);
 }
 
 .attribution {
@@ -123,9 +130,11 @@ body {
 
   position: absolute;
   bottom: 0;
+  margin-bottom: 5px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-dark-cyan);
+  font-weight: 700;
 }
 
 @media (min-width: 35rem) {
