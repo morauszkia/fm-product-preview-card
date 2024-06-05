@@ -56,6 +56,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 1.2rem;
 }
 
@@ -106,6 +107,14 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 36%, 27%);
 }
 
 .attribution {
