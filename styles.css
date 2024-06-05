@@ -118,3 +118,15 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 35rem) {
+  .product-card {
+    flex-direction: row;
+    /* flex: 1; */
+  }
+
+  .product-img {
+    width: 50%;
+    height: auto;
+  }
+}
