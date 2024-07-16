@@ -1,4 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Montserrat-Medium.woff") format("woff"),
+    url("./assets/fonts/Montserrat-Medium.otf") format("opentype"),
+    url("./assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url("./assets/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Montserrat-Bold.woff") format("woff"),
+    url("./assets/fonts/Montserrat-Bold.otf") format("opentype"),
+    url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-weight: 700;
+  src: url("./assets/fonts/Fraunces9pt-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Fraunces9pt-Bold.woff") format("woff"),
+    url("./assets/fonts/Fraunces9pt-Bold.otf") format("opentype"),
+    url("./assets/fonts/Fraunces9pt-Bold.ttf") format("truetype");
+}
 
 * {
   margin: 0;
